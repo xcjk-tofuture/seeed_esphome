@@ -365,7 +365,7 @@ void WaveshareEPaper4C::fill(Color color) {
     uint32_t buffer_length = this->get_buffer_length_();
     for(uint16_t i = 0; i < buffer_length; i++)
     {
-        this->buffer_[i] =  ((pixel_color >> 6) & 0x03) * 0x85;
+        this->buffer_[i] =  ((pixel_color >> 6) & 0x03) * 0x55;
     }
 }
 }
